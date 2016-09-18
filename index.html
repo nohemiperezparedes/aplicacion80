@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<style type="text/css">
+#principal h5 {
+	font-size: medium;
+	font-weight: bold;
+}
+.a {
+	font-size: large;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+#principal h2 {
+	font-size: medium;
+}
+</style>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/scripts.js"></script>
+</head>
+<body>
+
+<div id="principal">
+<div data-role="header" data-back-btn-theme="b">
+<h1 class="a"> ESTUDIO SOCIOECONOMICO</h1>
+</div>
+<h2>1.DATOS GENERALES DEL USUARIO </h2>
+<div id="principal">
+<form name="formulario">
+<p onClick="fechahora()">
+<input type="text" name="horafecha" id="horafecha" value="" size="50">
+<input type="button" value="Obtener fecha" onClick="fechahora()">
+</form>
+</div>
+  <div class="ui-field-contain">
+    <label for="name">Nombre :</label>
+    <input type="text" name="text" id="name" value="" placeholder="Nombre completo con apeyidos">
+  </div>
+    
+      <div class="ui-field-contain">
+    <label for="colors">Sexo:</label>
+    <select id="colors" name="colors">
+      <option value="mas">Masculino</option>
+      <option value="fem">Femenino</option>
+      
+    </select>
+  </div>
+    
+     <div class="ui-field-contain">
+    <label for="colors">Estado civil:</label>
+    <select id="colors" name="colors">
+      <option value="cas">Casado</option>
+      <option value="sol">Soltero</option>
+      <option value="unl">Union libre</option>
+      <option value="vid">Viudo</option>
+      <option value="div">Divorsiado</option>
+    </select>
+  </div>
+    <div class="ui-field-contain">
+    <label for="date">Escriba su edad:</label>
+    <input type="date" name="date" id="date" value="" placeholder="Recien cumplidos">
+  </div>
+  </form>
+  
+   <div class="ui-field-contain">
+    <label for="date">Lugar y Origen:</label>
+    <input type="date" name="date" id="date" value="" >
+  </div>
+   <div class="ui-field-contain">
+    <label for="date">Escolaridad:</label>
+    <input type="date" name="date" id="date" value="" placeholder="Ultimo cursado">
+  </div>
+  
+   <div class="ui-field-contain">
+    <label for="date">Ocupacion:</label>
+    <input type="date" name="date" id="date" value="">
+  </div>
+  
+    <h3>2.DATOS DE IDENTIFICACION DOMICILIARIA </h3>
+  <div class="ui-field-contain">
+  <label for="switch">Usted tiene empleo</label>
+    <input type="checkbox" data-role="flipswitch" name="switch" id="switch">
+  </div>
+  <div class="ui-field-contain">
+    <label for="date">Domicilio:</label>
+    <input type="date" name="date" id="date" value="" placeholder="Calle, Numero, Colonia, CP y Delegacion">
+  </div>
+  
+   <div class="ui-field-contain">
+    <label for="date">Medios de transporte para llegar al domicilio:</label>
+    <input type="date" name="date" id="date" value="">
+  </div>
+  <h4>3.VIVIENDA </h4>
+    <div class="ui-field-contain">
+    <label for="colors">Tenencia de la vivienda:</label>
+    <select id="colors" name="colors">
+      <option value="pro">Propia</option>
+      <option value="re">Rentada</option>
+      <option value="pres">Prestada</option>
+      <option value="in">Invadida</option>
+      
+    </select>
+  </div>
+   <div class="ui-field-contain">
+   <legend>Mobiliario:</legend>
+   <label for="pro"><br>Televisión</label>
+   <input type="checkbox" name="pro" id="pro"/>
+      <label for="Ren">Estufa </label>
+      <input type="checkbox" name="Ren" id="Ren"/>
+   <label for="Pre">Horno de microondas </label>
+   <input type="checkbox" name="Pre" id="Pre"/>
+   <label for="Inv">Computadora</label>
+   <input type="checkbox" name="Inv" id="Inv"/>
+   <label for="re">Refrigerador</label>
+   <input type="checkbox" name="re" id="re"/>
+ </div>
+  <h5>4.SALUD</h5>
+     <div class="ui-field-contain">
+    <label for="clors">Servicios medicos</label>
+    <select id="clors" name="colors">
+      <option value="mas"> IMSS </option>
+      <option value="fem">ISSSTE</option>
+      <option value="fem">Centro de salud</option> 
+      <option value="g">Dispensario</option>
+      <option value="pri">Medico Privado </option>
+    </select>
+  </div>
+   <input type="reset" value="Borrar todo" name="btnb"></input>
+
+</form>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <h4>Nohemi Perez Paredes</h4>
+   </div>
+    </div>
+    
+</body>
+</html>
